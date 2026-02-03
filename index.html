@@ -1,100 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Cursing My Boyfriend</title>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
     }
-
+    * { box-sizing: border-box; }
     body {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #ff4d6d, #845ec2);
-      font-family: 'Montserrat', sans-serif;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
     }
-
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
     .container {
-      background: rgba(0, 0, 0, 0.35);
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 600px;
-      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1.5rem;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      color: var(--muted);
+      max-width: 700px;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .links a {
+      border: 1px solid #1f2933;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.03);
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .card h3 {
+      margin: 0;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .card .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+    }
+    .tag {
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(56,189,248,0.12);
+      color: #7dd3fc;
+      border: 1px solid rgba(56,189,248,0.25);
+    }
+    footer {
       text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    }
-
-    h1 {
-      font-family: 'Comic Neue', cursive;
-      font-size: 3rem;
-      margin-bottom: 15px;
-    }
-
-    .subtitle {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      opacity: 0.9;
-    }
-
-    .curse-list {
-      list-style: none;
-      margin-bottom: 30px;
-    }
-
-    .curse-list li {
-      background: rgba(255, 255, 255, 0.15);
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 12px;
-      font-size: 1rem;
-      transition: transform 0.2s, background 0.2s;
-    }
-
-    .curse-list li:hover {
-      transform: scale(1.03);
-      background: rgba(255, 255, 255, 0.25);
-    }
-
-    .footer {
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-
-    .heart {
-      color: #ffccd5;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 2rem 0 1rem;
     }
   </style>
 </head>
 <body>
-
   <div class="container">
-    <h1>Dear My Boyfriend</h1>
-    <p class="subtitle">
-      This website exists because you were annoying today ❤️
-    </p>
+    <header>
+      <h1>Your Name</h1>
+      <p>
+        Developer / Engineer / Designer. I build clean, practical things on the web and enjoy
+        turning ideas into solid, usable products.
+      </p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">LinkedIn</a>
+        <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
+        <a href="mailto:youremail@example.com">Email</a>
+      </div>
+    </header>
 
-    <ul class="curse-list">
-      <li>May your phone charger only work at a weird angle.</li>
-      <li>May your socks always feel slightly damp.</li>
-      <li>May your Wi-Fi connect but never actually load.</li>
-      <li>May every game you play lag at the worst moment.</li>
-      <li>May you step on exactly one Lego. Repeatedly.</li>
-      <li>May your food be *almost* perfect but missing salt.</li>
-    </ul>
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>
+            Short description of what this project does and why it's interesting.
+          </p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">API</span>
+            <span class="tag">Tailwind</span>
+          </div>
+          <a href="https://github.com/YOUR_USERNAME/project-one" target="_blank">View on GitHub →</a>
+        </div>
 
-    <p class="footer">
-      I love you though <span class="heart">♥</span><br>
-      This curse expires when you apologize.
-    </p>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>
+            Another project. Focus on the problem you solved, not just the tech.
+          </p>
+          <div class="tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
+          <a href="#">Live Demo →</a>
+        </div>
+
+        <div class="card">
+          <h3>Project Three</h3>
+          <p>
+            A smaller or experimental project. These are still worth showing.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Automation</span>
+          </div>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Your Name. Built clean, not flashy.
+    </footer>
   </div>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
