@@ -30,7 +30,8 @@ body {
     color: var(--ink);
     line-height: 1.7;
     background: linear-gradient(rgba(11, 12, 15, 0.75), rgba(11, 12, 15, 0.85)),
-        url("picture/desktop-wallpaper-portfolio.jpg") center/cover no-repeat fixed;
+    url("desktop-wallpaper-portfolio.jpg") center/cover no-repeat fixed;
+
     position: relative;
     overflow-x: hidden;
 }
