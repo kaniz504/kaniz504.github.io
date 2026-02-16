@@ -1,7 +1,7 @@
 // ===== PERSONAL INFORMATION CONFIGURATION =====
 // Edit your details here - all information will be automatically updated throughout the website
 const personalInfo = {
-    name: "Kaniz Fatema Faria",
+    name: "Kaniz Fatema",
     title: "Aspiring Developer | Learning Web Development ",
     email: "kanizfatemafaria30@gmail.com",
     location: "Dhaka, Bangladesh",
