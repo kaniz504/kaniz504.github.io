@@ -262,61 +262,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Contact Form Handling
-const contactForm = document.getElementById('contactForm');
-
-// Initialize EmailJS (replace with your actual public key)
-(function() {
-    emailjs.init("YOUR_PUBLIC_KEY");
-})();
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Get form values
-    const name = contactForm.querySelector('input[type="text"]').value;
-    const email = contactForm.querySelector('input[type="email"]').value;
-    const subject = contactForm.querySelectorAll('input[type="text"]')[1].value;
-    const message = contactForm.querySelector('textarea').value;
-
-    // Validate
-    if (!name || !email || !subject || !message) {
-        alert('Please fill all fields');
-        return;
-    }
-
-    // Show loading state
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-
-    // Prepare email parameters
-    const templateParams = {
-        from_name: name,
-        from_email: email,
-        subject: subject,
-        message: message,
-        to_email: personalInfo.email
-    };
-
-    // Send email using EmailJS
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            alert('Thank you! Your message has been sent successfully.');
-            contactForm.reset();
-        }, function(error) {
-            console.log('FAILED...', error);
-            alert('Sorry, there was an error sending your message. Please try again later.');
-        })
-        .finally(() => {
-            // Reset button state
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        });
-});
-
 // Scroll effect for navbar
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
