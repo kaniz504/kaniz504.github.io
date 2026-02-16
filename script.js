@@ -1,15 +1,14 @@
 // ===== PERSONAL INFORMATION CONFIGURATION =====
 // Edit your details here - all information will be automatically updated throughout the website
 const personalInfo = {
-    name: "Your Name",
+    name: "Kaniz Fatema Faria",
     title: "Aspiring Developer | Learning Web Development ",
     email: "kanizfatemafaria30@gmail.com",
-    phone: "+880 1906443272",
-    location: "City, Country",
+    location: "Dhaka, Bangladesh",
     github: "https://github.com/kaniz504",
     githubUsername: "kaniz504",  // Your GitHub username for fetching repositories
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://twitter.com/yourprofile",
+    linkedin: "#",
+    twitter: "#",
     about: {
         intro: "Hi! I'm a passionate beginner developer just starting my journey into web development. I'm excited to learn new technologies and build cool projects!",
         background: "I'm learning the fundamentals of HTML, CSS, and JavaScript through hands-on projects and continuous practice. Every day is a learning opportunity, and I'm committed to improving my skills one step at a time.",
